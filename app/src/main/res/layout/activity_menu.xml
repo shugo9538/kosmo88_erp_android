@@ -7,45 +7,87 @@
     android:orientation="vertical"
     tools:context=".MenuActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:onClick="goMenu"
-        android:tag="hr"
-        android:text="인사조회" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goMenu"
-        android:tag="account"
-        android:text="회계조회" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.MaterialComponents.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            app:title="KU_ERP_MOBILE" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goMenu"
-        android:tag="sales"
-        android:text="영업조회" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goMenu"
-        android:tag="purchase"
-        android:text="구매조회" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goMenu"
-        android:tag="wms"
-        android:text="물류조회" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:onClick="goMenu"
+                android:layout_margin="20dp"
+                android:tag="hr"
+                android:textSize="20sp"
+                android:text="인사조회" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:onClick="goMenu"
+                android:layout_margin="20dp"
+                android:tag="account"
+                android:textSize="20sp"
+                android:text="회계조회" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:onClick="goMenu"
+                android:layout_margin="20dp"
+                android:tag="sales"
+                android:textSize="20sp"
+                android:text="영업조회" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button4"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:onClick="goMenu"
+                android:layout_margin="20dp"
+                android:tag="purchase"
+                android:textSize="20sp"
+                android:text="구매조회" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button5"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:onClick="goMenu"
+                android:layout_margin="20dp"
+                android:tag="wms"
+                android:textSize="20sp"
+                android:text="물류조회" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

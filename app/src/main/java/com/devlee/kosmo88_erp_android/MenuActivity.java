@@ -2,10 +2,12 @@ package com.devlee.kosmo88_erp_android;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -13,7 +15,12 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        setUpToolbar();
+    }
 
+    private void setUpToolbar() {
+        Toolbar toolbar = findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
     }
 
     public void goMenu(View view) {

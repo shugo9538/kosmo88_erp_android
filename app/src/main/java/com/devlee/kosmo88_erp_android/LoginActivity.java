@@ -2,14 +2,18 @@ package com.devlee.kosmo88_erp_android;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.view.View.OnClickListener;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -37,15 +41,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        EditText id = findViewById(R.id.userid);
-        EditText password = findViewById(R.id.password);
+        TextInputEditText id = findViewById(R.id.userid);
+        TextInputEditText password = findViewById(R.id.password);
 
         web = Web.WEB;
         Retrofit mRetrofit = web.getmRetrofit();
         RetrofitAPI mRetrofitAPI = web.getmRetrofitAPI();
 
-        final Button submitBtn = findViewById(R.id.btn_signin);
-        submitBtn.setOnClickListener(new View.OnClickListener() {
+        MaterialButton submitBtn = findViewById(R.id.btn_signin);
+        submitBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 map = new HashMap<>();
