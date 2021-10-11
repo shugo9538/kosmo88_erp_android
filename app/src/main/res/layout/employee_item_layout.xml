@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/photo"
             android:layout_width="100dp"
-            android:layout_height="150dp" />
+            android:layout_height="100dp"/>
 
     </LinearLayout>
 
@@ -30,14 +32,16 @@
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="사원 코드" />
 
             <TextView
                 android:id="@+id/id"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -50,14 +54,16 @@
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="이름" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -70,14 +76,16 @@
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="전화번호" />
 
             <TextView
                 android:id="@+id/phone"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -90,14 +98,16 @@
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="이메일" />
 
             <TextView
                 android:id="@+id/email"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -110,14 +120,16 @@
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="직급명" />
 
             <TextView
                 android:id="@+id/position_id"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
                 android:text="TextView" />
         </LinearLayout>
     </LinearLayout>

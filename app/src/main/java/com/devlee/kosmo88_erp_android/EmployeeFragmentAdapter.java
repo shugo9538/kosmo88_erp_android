@@ -1,7 +1,6 @@
 package com.devlee.kosmo88_erp_android;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.LayoutInflater;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
 

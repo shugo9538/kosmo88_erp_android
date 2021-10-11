@@ -1,13 +1,14 @@
 package com.devlee.kosmo88_erp_android;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
 
@@ -40,8 +41,7 @@ public class EmployeeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.employee_framgent_view, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.employee_framgent_view, container, false);
         rootView.setTag(TAG);
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(rootView.getContext());
