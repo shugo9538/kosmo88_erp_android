@@ -11,8 +11,8 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends FragmentActivity {
-    protected static final String TAG = MainActivity.class.getSimpleName();
+public class HRViewActivity extends FragmentActivity {
+    protected static final String TAG = HRViewActivity.class.getSimpleName();
     private static final int NUM_PAGES = 3;
     private Web web;
 

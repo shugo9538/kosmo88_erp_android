@@ -3,11 +3,17 @@ package com.devlee.kosmo88_erp_android;
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
 
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface RetrofitAPI {
+    @POST("/logistics_erp/loginAction")
+    Call<String> login(@Query("map") Map<String, String> map);
+
     @GET("/logistics_erp/hr/employee/selectEmployee")
     Call<List<EmployeeDTO>> getEmployeeList();
 

@@ -13,12 +13,14 @@ public class ImageLoadTask extends AsyncTask<Void, Void, Bitmap> {
 
     private String urlStr;
     private ImageView imageView;
+    private String name;
 
     private static Map<String, Bitmap> bitmapHash = new HashMap<>();
 
-    public ImageLoadTask(String urlStr, ImageView imageView) {
+    public ImageLoadTask(String urlStr, ImageView imageView, String name) {
         this.urlStr = urlStr;
         this.imageView = imageView;
+        this.name = name;
     }
 
     @Override
@@ -42,8 +44,7 @@ public class ImageLoadTask extends AsyncTask<Void, Void, Bitmap> {
 
             URL url = new URL(urlStr);
             bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());
-
-            bitmapHash.put(urlStr, bitmap);
+            bitmapHash.put(urlStr + name, bitmap);
         } catch (Exception e) {
             e.printStackTrace();
         }

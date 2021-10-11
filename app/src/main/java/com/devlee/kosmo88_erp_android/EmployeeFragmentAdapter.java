@@ -87,10 +87,14 @@ public class EmployeeFragmentAdapter extends RecyclerView.Adapter<EmployeeFragme
 
     @Override
     public void onBindViewHolder(@NonNull EmployeeViewHolder employeeViewHolder, int position) {
-        Log.d("여기서 데이터가 바인딩 되야하는데", "왜 안됨?");
         EmployeeDTO dto = dataSet.get(position);
 
-        ImageLoadTask task = new ImageLoadTask(web.getServletURL() + dto.getPhoto(), employeeViewHolder.photo);
+        if (!dto.getPhoto().equals("/")) {
+            ImageLoadTask task = new ImageLoadTask("http://192.168.50.26" + dto.getPhoto(), employeeViewHolder.getPhoto(), dto.getName());
+            task.execute();
+        } else {
+            employeeViewHolder.getPhoto().setImageResource(R.mipmap.ic_launcher);
+        }
         employeeViewHolder.getId().setText(dto.getId());
         employeeViewHolder.getName().setText(dto.getName());
         employeeViewHolder.getPhone().setText(dto.getPhone());

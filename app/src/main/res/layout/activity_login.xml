@@ -29,7 +29,7 @@
             android:layout_marginBottom="10dp"
             android:padding="10dp"
             android:hint="PASSWORD"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="197dp" />
 

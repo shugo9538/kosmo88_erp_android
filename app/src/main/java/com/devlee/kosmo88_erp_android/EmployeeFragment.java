@@ -43,7 +43,7 @@ public class EmployeeFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.employee_framgent_view, container, false);
         rootView.setTag(TAG);
-        mRecyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
+        mRecyclerView = rootView.findViewById(R.id.recyclerview);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(rootView.getContext());
         mRecyclerView.setLayoutManager(layoutManager);
         mAdapter = new EmployeeFragmentAdapter(rootView.getContext(), list);
