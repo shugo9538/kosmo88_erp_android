@@ -1,24 +1,27 @@
 package com.devlee.kosmo88_erp_android;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.PagerTabStrip;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends FragmentActivity {
-    protected static final String TAG = MainActivity.class.getSimpleName();
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+public class HRViewActivity extends FragmentActivity {
+    protected static final String TAG = HRViewActivity.class.getSimpleName();
     private static final int NUM_PAGES = 3;
     private Web web;
 
     private ViewPager mPager;
     private PagerAdapter pagerAdapter;
-    private PagerTabStrip tabLayout;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class MainActivity extends FragmentActivity {
             super(fm);
         }
 
+        @NonNull
         @Override
         public Fragment getItem(int position) {
             switch (position) {

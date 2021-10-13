@@ -11,6 +11,7 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public enum Web {
     WEB;
@@ -29,11 +30,13 @@ public enum Web {
     public void setRetrofitInit() {
         if (mRetrofit == null) {
             mGson = new GsonBuilder()
+                    .setLenient()
                     .setDateFormat("yy-MM-dd")
                     .create();
             String url = getServletURL();
             mRetrofit = new Retrofit.Builder()
                     .baseUrl(url)
+                    .addConverterFactory(ScalarsConverterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create(mGson))
                     .build();
             mRetrofitAPI = mRetrofit.create(RetrofitAPI.class);
