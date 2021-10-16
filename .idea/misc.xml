@@ -15,6 +15,23 @@
         <entry key="..\:/Dev88/workspace_android/ex/kosmo88_erp_android/app/src/main/res/layout/main_fragment.xml" value="0.20364583333333333" />
         <entry key="..\:/Dev88/workspace_android/ex/kosmo88_erp_android/app/src/main/res/layout/screen_slide.xml" value="0.20364583333333333" />
         <entry key="..\:/Dev88/workspace_android/ex/kosmo88_erp_android/app/src/main/res/xml/network.xml" value="0.1" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/activity_login.xml" value="0.3463541666666667" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/activity_main.xml" value="0.3463541666666667" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/activity_menu.xml" value="0.21666666666666667" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/employee_framgent_view.xml" value="0.264" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/employee_item_layout.xml" value="0.264" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/estimate_framgent_view.xml" value="0.2046875" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/estimate_item_layout.xml" value="0.4" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/main_activity.xml" value="0.2046875" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/order_framgent_view.xml" value="0.1" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/order_item_layout.xml" value="0.264" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_client_framgent_view.xml" value="0.28958333333333336" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_client_item_layout.xml" value="0.28958333333333336" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_estimate_framgent_view.xml" value="0.28958333333333336" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_item_framgent_view.xml" value="0.3296875" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_item_item_layout.xml" value="0.3296875" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_order_framgent_view.xml" value="0.35052083333333334" />
+        <entry key="..\:/Dev88/workspace_android/kosmo88_erp_android/app/src/main/res/layout/purchase_order_item_layout.xml" value="0.35052083333333334" />
       </map>
     </option>
   </component>
