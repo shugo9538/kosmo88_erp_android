@@ -5,8 +5,8 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
@@ -14,9 +14,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class HRViewActivity extends FragmentActivity {
-    protected static final String TAG = HRViewActivity.class.getSimpleName();
-    private static final int NUM_PAGES = 3;
+public class AccountViewActivity extends FragmentActivity {
+    protected static final String TAG = AccountViewActivity.class.getSimpleName();
+    private static final int NUM_PAGES = 2;
     private Web web;
 
     private ViewPager mPager;
@@ -44,7 +44,7 @@ public class HRViewActivity extends FragmentActivity {
     }
 
     static class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        private String tabTitle[] = new String[]{"Tab1", "Tab2", "Tab3"};
+        private String tabTitle[] = new String[]{"손익계산서", "재무상태표", "Tab3"};
 
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -55,16 +55,16 @@ public class HRViewActivity extends FragmentActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    Log.d(TAG, "this fragment selected 0");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 0");
+                    return IncomeFragment.newInstance();
 
                 case 1:
-                    Log.d(TAG, "this fragment selected 1");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 1");
+                    return FinancialFragment.newInstance();
 
                 default:
-                    Log.d(TAG, "this fragment selected 2");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 2");
+                    return IncomeFragment.newInstance();
             }
         }
 
