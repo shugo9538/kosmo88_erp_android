@@ -91,7 +91,7 @@ public class EmployeeFragmentAdapter extends RecyclerView.Adapter<EmployeeFragme
         EmployeeDTO dto = dataSet.get(position);
 
         if (!dto.getPhoto().equals("/")) {
-            ImageLoadTask task = new ImageLoadTask("http://192.168.50.26" + dto.getPhoto(), employeeViewHolder.getPhoto(), dto.getName());
+            ImageLoadTask task = new ImageLoadTask("http://192.168.219.108" + dto.getPhoto(), employeeViewHolder.getPhoto(), dto.getName());
             task.execute();
         } else {
             employeeViewHolder.getPhoto().setImageResource(R.mipmap.ic_launcher);
