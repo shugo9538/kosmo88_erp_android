@@ -20,6 +20,9 @@
             android:name=".HRViewActivity"
             android:exported="true" />
         <activity
+            android:name=".WmsViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:exported="true">
