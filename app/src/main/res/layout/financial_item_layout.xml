@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="재무상태표"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#e1f5fe"
+                android:layout_margin="10dp"
+                android:textSize="21dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:background="#d1c4e9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="과목"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="제01(당)기"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="자 산"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ⅰ. 유 동 자 산"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+android:id="@+id/quick_assets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(1) 당 좌 자 산"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/current_assets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="현금성자산"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/cash_asets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+            />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="매출채권"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/accounts_receivable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+            />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부가세 대급금"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/vatPayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+            />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(2) 재 고 자 산"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/inventory_assets_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="상 품"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/inventory_assets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+            />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="자 산 총 계"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/assets_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부채"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ⅰ. 유 동 부 채"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+android:id="@+id/quick_dept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="매입채무"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+android:id="@+id/purchase_receivable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부가  예수금"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+android:id="@+id/vatDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부 채 총 계"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/dept_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ⅰ. 자 본 금"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/capita_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="#263238">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="자본금"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp"
+                />
+
+            <TextView
+android:id="@+id/capital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_weight="5"
+                android:background="#e1f5fe"
+                android:layout_margin="1dp"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="자본총계"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/asset3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#e1f5fe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부채및자본총계"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/asset7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="#e1f5fe"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#e1f5fe"
+                android:gravity="center"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

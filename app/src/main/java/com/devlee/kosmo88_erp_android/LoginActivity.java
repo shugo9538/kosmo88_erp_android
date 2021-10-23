@@ -44,7 +44,10 @@ public class LoginActivity extends AppCompatActivity {
         TextInputEditText id = findViewById(R.id.userid);
         TextInputEditText password = findViewById(R.id.password);
 
+        Log.d(TAG, "나와라라라라라라라라라: ");
+
         web = Web.WEB;
+
         Retrofit mRetrofit = web.getmRetrofit();
         RetrofitAPI mRetrofitAPI = web.getmRetrofitAPI();
 

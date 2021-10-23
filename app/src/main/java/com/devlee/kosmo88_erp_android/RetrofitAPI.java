@@ -1,6 +1,8 @@
 package com.devlee.kosmo88_erp_android;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
+import com.devlee.kosmo88_erp_android.dto.FinancialDTO;
+import com.devlee.kosmo88_erp_android.dto.IncomeDTO;
 import com.devlee.kosmo88_erp_android.dto.PurchaseClientDTO;
 import com.devlee.kosmo88_erp_android.dto.PurchaseEstimateListViewDTO;
 import com.devlee.kosmo88_erp_android.dto.PurchaseItemListViewDTO;
@@ -18,12 +20,20 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
+//    @GET("주소")
+//    Call<받아오는 형태 = 스프링에서 return 하는 값> 메서드 명();
 public interface RetrofitAPI {
     @POST("/logistics_erp/loginAction")
     Call<String> login(@Query("map") Map<String, String> map);
 
     @GET("/logistics_erp/hr/employee/selectEmployee")
     Call<List<EmployeeDTO>> getEmployeeList();
+
+    @GET("/logistics_erp/account/rest/selectIncomeStatement")
+    Call<IncomeDTO> getIncomeSatement();
+
+    @GET("/logistics_erp/account/rest/selectFinancialStatement")
+    Call<FinancialDTO> getFinancialSatement();
 
     @GET("/logistics_erp/purchase/itemManagement/itemList")
     Call<List<PurchaseItemListViewDTO>> getItemList();
@@ -37,7 +47,7 @@ public interface RetrofitAPI {
     @GET("/logistics_erp/purchase/orderManagement/orderList")
     Call<List<PurchaseOrderListViewDTO>> getOrderList();
 
-  @GET("/logistics_erp/sales/clientManagement/clientList")
+    @GET("/logistics_erp/sales/clientManagement/clientList")
     Call<List<SalesClientDTO>> getSalesClientList();
 
     @GET("/logistics_erp/sales/estimateManagement/estimateList")

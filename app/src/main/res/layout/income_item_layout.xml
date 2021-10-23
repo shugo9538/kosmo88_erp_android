@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="손익계산서"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#e1f5fe"
+        android:layout_margin="10dp"
+        android:textSize="21dp"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="#d1c4e9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="과목"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="제01(당)기"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅰ . 매 출 액"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/sales_cost_sum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="상품매출"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/sales_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅱ . 매 출 원 가"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="기초상품재고액"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/basic_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="당기상품매입액"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/current_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="기말상품재고액"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/end_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅲ . 매출 총이익"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/sales_cost_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:layout_marginRight="10dp"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅳ . 판매 관리비"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/sales_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="직원급여"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/employee_salary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="복리후생비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/employee_benefits"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="TextView"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="여비교통비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/travel_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="TextView"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="접대비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/entertainment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="통신비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/communication_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="수도광열비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/water_utility_bill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="세금과공과금"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/taxes_and_duties"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="지급임차료"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/paid_rent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="보험료"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/premium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="차량유지비"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/vehicle_maintenance_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="사무용품비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/office_supplies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="소모품비"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/consumables_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅴ . 영 업 이 익"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/sales_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅵ . 영 업 외 수 익"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/interest_interest_income_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="이자수익"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/interest_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅶ . 영 업 외 비 용"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/interest_expense_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#263238">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="이자비용"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/interest_expense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_weight="5"
+            android:background="#e1f5fe"
+            android:layout_margin="1dp"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅷ . 법인세비용차감전순이익"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/net_income_before_tax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅸ . 법 인 세 비 용"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/corporate_tax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e1f5fe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ⅹ . 당 기 순 이 익"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="#e1f5fe"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/net_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e1f5fe"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </TableRow>
+</TableLayout>
+</ScrollView>

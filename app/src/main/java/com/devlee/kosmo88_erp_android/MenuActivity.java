@@ -29,7 +29,7 @@ public class MenuActivity extends AppCompatActivity {
                 intent = new Intent(this, HRViewActivity.class);
                 break;
             case "account":
-                intent = new Intent(this, HRViewActivity.class);
+                intent = new Intent(this, AccountViewActivity.class);
                 break;
             case "sales":
                 intent = new Intent(this, SalesViewActivity.class);

@@ -20,6 +20,10 @@
             android:name=".HRViewActivity"
             android:exported="true" />
         <activity
+            android:name=".AccountViewActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:exported="true" />
+        <activity
             android:name=".PurchaseViewActivity"
             android:exported="true" />
         <activity
