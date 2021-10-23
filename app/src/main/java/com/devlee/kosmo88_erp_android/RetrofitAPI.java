@@ -4,6 +4,7 @@ import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesClientDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesEstimateDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesOrderDTO;
+import com.devlee.kosmo88_erp_android.dto.WarehouseDto;
 
 import java.util.List;
 import java.util.Map;
@@ -30,5 +31,9 @@ public interface RetrofitAPI {
     Call<List<SalesOrderDTO>> getSalesOrderList();
 
     //    @GET("주소")
+    @GET("/logistics_erp/wms/warehouse/warehouseList")
+    Call<List<WarehouseDto>> warehouseList();
+
+//    @GET("주소")
 //    Call<받아오는 형태 = 스프링에서 return 하는 값> 메서드 명();
 }
