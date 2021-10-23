@@ -18,6 +18,7 @@ public enum Web {
     //    public static String ip = "192.168.50.26"; // AWS IP
     private String servletURL = "http://192.168.219.104/logistics_erp/"; //연결할 JSP URL
 
+
     private Retrofit mRetrofit;
     private RetrofitAPI mRetrofitAPI;
     private Gson mGson;
