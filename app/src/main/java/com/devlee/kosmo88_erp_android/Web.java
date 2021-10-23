@@ -1,6 +1,5 @@
 package com.devlee.kosmo88_erp_android;
 
-import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -17,7 +16,8 @@ public enum Web {
     WEB;
 
     //    public static String ip = "192.168.50.26"; // AWS IP
-    private String servletURL = "http://192.168.0.14/logistics_erp/"; //연결할 JSP URL
+    private String servletURL = "http://192.168.219.104/logistics_erp/"; //연결할 JSP URL
+
 
     private Retrofit mRetrofit;
     private RetrofitAPI mRetrofitAPI;

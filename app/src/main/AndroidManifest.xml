@@ -20,10 +20,13 @@
             android:name=".HRViewActivity"
             android:exported="true" />
         <activity
-            android:name=".WmsViewActivity"
+            android:name=".PurchaseViewActivity"
             android:exported="true" />
         <activity
             android:name=".SalesViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WmsViewActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"

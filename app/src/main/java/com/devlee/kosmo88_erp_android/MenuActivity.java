@@ -35,7 +35,7 @@ public class MenuActivity extends AppCompatActivity {
                 intent = new Intent(this, SalesViewActivity.class);
                 break;
             case "purchase":
-                intent = new Intent(this, HRViewActivity.class);
+                intent = new Intent(this, PurchaseViewActivity.class);
                 break;
             case "wms":
                 intent = new Intent(this, WmsViewActivity.class);

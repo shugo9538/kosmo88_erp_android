@@ -1,6 +1,10 @@
 package com.devlee.kosmo88_erp_android;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
+import com.devlee.kosmo88_erp_android.dto.PurchaseClientDTO;
+import com.devlee.kosmo88_erp_android.dto.PurchaseEstimateListViewDTO;
+import com.devlee.kosmo88_erp_android.dto.PurchaseItemListViewDTO;
+import com.devlee.kosmo88_erp_android.dto.PurchaseOrderListViewDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesClientDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesEstimateDTO;
 import com.devlee.kosmo88_erp_android.dto.SalesOrderDTO;
@@ -21,7 +25,19 @@ public interface RetrofitAPI {
     @GET("/logistics_erp/hr/employee/selectEmployee")
     Call<List<EmployeeDTO>> getEmployeeList();
 
-    @GET("/logistics_erp/sales/clientManagement/clientList")
+    @GET("/logistics_erp/purchase/itemManagement/itemList")
+    Call<List<PurchaseItemListViewDTO>> getItemList();
+
+    @GET("/logistics_erp/purchase/clientManagement/clientList")
+    Call<List<PurchaseClientDTO>> getClientList();
+
+    @GET("/logistics_erp/purchase/estimateManagement/estimateList")
+    Call<List<PurchaseEstimateListViewDTO>> getEstimateList();
+
+    @GET("/logistics_erp/purchase/orderManagement/orderList")
+    Call<List<PurchaseOrderListViewDTO>> getOrderList();
+
+  @GET("/logistics_erp/sales/clientManagement/clientList")
     Call<List<SalesClientDTO>> getSalesClientList();
 
     @GET("/logistics_erp/sales/estimateManagement/estimateList")
