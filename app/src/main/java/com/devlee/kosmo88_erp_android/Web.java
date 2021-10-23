@@ -17,8 +17,7 @@ public enum Web {
     WEB;
 
     //    public static String ip = "192.168.50.26"; // AWS IP
-//    private String servletURL = "http://logistics_erp/"; //연결할 JSP URL
-    private String servletURL = "http://10.0.2.2/logistics_erp/"; //연결할 JSP URL
+    private String servletURL = "http://192.168.0.14/logistics_erp/"; //연결할 JSP URL
 
     private Retrofit mRetrofit;
     private RetrofitAPI mRetrofitAPI;

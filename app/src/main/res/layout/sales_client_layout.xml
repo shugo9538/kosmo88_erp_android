@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:padding="30dp"
+        android:gravity="center"
+
+
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="거래처 번호" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="회사명" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="사업자번호" />
+
+            <TextView
+                android:id="@+id/register_num"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="대표자명" />
+
+            <TextView
+                android:id="@+id/ceo_name"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="전화번호" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:background="#ececed"
+                android:text="주소" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

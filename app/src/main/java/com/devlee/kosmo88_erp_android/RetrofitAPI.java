@@ -1,6 +1,9 @@
 package com.devlee.kosmo88_erp_android;
 
 import com.devlee.kosmo88_erp_android.dto.EmployeeDTO;
+import com.devlee.kosmo88_erp_android.dto.SalesClientDTO;
+import com.devlee.kosmo88_erp_android.dto.SalesEstimateDTO;
+import com.devlee.kosmo88_erp_android.dto.SalesOrderDTO;
 import com.devlee.kosmo88_erp_android.dto.WarehouseDto;
 
 import java.util.List;
@@ -18,6 +21,16 @@ public interface RetrofitAPI {
     @GET("/logistics_erp/hr/employee/selectEmployee")
     Call<List<EmployeeDTO>> getEmployeeList();
 
+    @GET("/logistics_erp/sales/clientManagement/clientList")
+    Call<List<SalesClientDTO>> getSalesClientList();
+
+    @GET("/logistics_erp/sales/estimateManagement/estimateList")
+    Call<List<SalesEstimateDTO>> getSalesEstimateList();
+
+    @GET("/logistics_erp/sales/orderManagement/orderList")
+    Call<List<SalesOrderDTO>> getSalesOrderList();
+
+    //    @GET("주소")
     @GET("/logistics_erp/wms/warehouse/warehouseList")
     Call<List<WarehouseDto>> warehouseList();
 
