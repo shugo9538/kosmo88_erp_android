@@ -56,10 +56,6 @@ public interface RetrofitAPI {
     @GET("/logistics_erp/sales/orderManagement/orderList")
     Call<List<SalesOrderDTO>> getSalesOrderList();
 
-    //    @GET("주소")
-    @GET("/logistics_erp/wms/warehouse/warehouseList")
+    @GET("/logistics_erp/wms/warehouse/info")
     Call<List<WarehouseDto>> warehouseList();
-
-//    @GET("주소")
-//    Call<받아오는 형태 = 스프링에서 return 하는 값> 메서드 명();
 }

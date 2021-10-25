@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class WmsViewActivity extends FragmentActivity {
     protected static final String TAG = WmsViewActivity.class.getSimpleName();
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = 1;
     private Web web;
 
     private ViewPager mPager;
@@ -44,7 +44,7 @@ public class WmsViewActivity extends FragmentActivity {
     }
 
     private class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        private String tabTitle[] = new String[]{"Tab1", "Tab2", "Tab3"};
+        private String tabTitle[] = new String[]{"창고관리"};
 
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -53,19 +53,7 @@ public class WmsViewActivity extends FragmentActivity {
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            switch (position) {
-                case 0:
-                    Log.d(TAG, "this fragment selected 0");
-                    return WmsFragment.newInstance();
-
-                case 1:
-                    Log.d(TAG, "this fragment selected 1");
-                    return WmsFragment.newInstance();
-
-                default:
-                    Log.d(TAG, "this fragment selected 2");
-                    return WmsFragment.newInstance();
-            }
+            return WmsFragment.newInstance();
         }
 
         @Override

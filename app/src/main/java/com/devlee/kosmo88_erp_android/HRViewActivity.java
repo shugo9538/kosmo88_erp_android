@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class HRViewActivity extends FragmentActivity {
     protected static final String TAG = HRViewActivity.class.getSimpleName();
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = 2;
     private Web web;
 
     private ViewPager mPager;
@@ -43,8 +43,8 @@ public class HRViewActivity extends FragmentActivity {
         }
     }
 
-    static class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        private String tabTitle[] = new String[]{"Tab1", "Tab2", "Tab3"};
+    private class ViewPagerAdapter extends FragmentStatePagerAdapter {
+        private String tabTitle[] = new String[]{"인사카드 목록", "급여 확인"};
 
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -56,10 +56,6 @@ public class HRViewActivity extends FragmentActivity {
             switch (position) {
                 case 0:
                     Log.d(TAG, "this fragment selected 0");
-                    return EmployeeFragment.newInstance();
-
-                case 1:
-                    Log.d(TAG, "this fragment selected 1");
                     return EmployeeFragment.newInstance();
 
                 default:
@@ -79,7 +75,7 @@ public class HRViewActivity extends FragmentActivity {
         }
     }
 
-    public static class ZoomOutPageTransformer implements ViewPager.PageTransformer {
+    public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
         private static final float MIN_SCALE = 0.85f;
         private static final float MIN_ALPHA = 0.5f;
 

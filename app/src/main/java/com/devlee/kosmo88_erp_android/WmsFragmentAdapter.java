@@ -43,31 +43,32 @@ public class WmsFragmentAdapter extends RecyclerView.Adapter<WmsFragmentAdapter.
             parent = (LinearLayout) v;
             name = v.findViewById(R.id.name);
             address = v.findViewById(R.id.address);
-//            section_count = v.findViewById(R.id.section_count);
-//            stock_count = v.findViewById(R.id.stock_count);
-//            capacity_sum = v.findViewById(R.id.capacity_sum);
-//            count_sum = v.findViewById(R.id.count_sum);
             section_count = v.findViewById(R.id.section_count);
             stock_count = v.findViewById(R.id.stock_count);
             capacity_sum = v.findViewById(R.id.capacity_sum);
             count_sum = v.findViewById(R.id.count_sum);
         }
 
-
-
         public TextView getName() {
             return name;
         }
+
         public TextView getAddress() {
             return address;
         }
+
         public TextView getSection_count() {
             return section_count;
         }
-        public TextView getStock_count() { return stock_count; }
+
+        public TextView getStock_count() {
+            return stock_count;
+        }
+
         public TextView getCapacity_sum() {
             return capacity_sum;
         }
+
         public TextView getCount_sum() {
             return count_sum;
         }
@@ -88,9 +89,9 @@ public class WmsFragmentAdapter extends RecyclerView.Adapter<WmsFragmentAdapter.
         wmsViewHolder.getName().setText(dto.getName());
         wmsViewHolder.getAddress().setText(dto.getAddress());
         wmsViewHolder.getSection_count().setText("" + dto.getSection_count());
-        wmsViewHolder.getStock_count().setText("" +dto.getStock_count());
-        wmsViewHolder.getCapacity_sum().setText("" +dto.getCapacity_sum());
-        wmsViewHolder.getCount_sum().setText("" +dto.getCount_sum());
+        wmsViewHolder.getStock_count().setText("" + dto.getStock_count());
+        wmsViewHolder.getCapacity_sum().setText("" + dto.getCapacity_sum());
+        wmsViewHolder.getCount_sum().setText("" + dto.getCount_sum());
     }
 
     @Override
