@@ -1,24 +1,27 @@
 package com.devlee.kosmo88_erp_android;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.PagerTabStrip;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends FragmentActivity {
-    protected static final String TAG = MainActivity.class.getSimpleName();
-    private static final int NUM_PAGES = 3;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+public class AccountViewActivity extends FragmentActivity {
+    protected static final String TAG = AccountViewActivity.class.getSimpleName();
+    private static final int NUM_PAGES = 2;
     private Web web;
 
     private ViewPager mPager;
     private PagerAdapter pagerAdapter;
-    private PagerTabStrip tabLayout;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,27 +43,28 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    private class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        private String tabTitle[] = new String[]{"Tab1", "Tab2", "Tab3"};
+    static class ViewPagerAdapter extends FragmentStatePagerAdapter {
+        private String tabTitle[] = new String[]{"손익계산서", "재무상태표", "Tab3"};
 
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
+        @NonNull
         @Override
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    Log.d(TAG, "this fragment selected 0");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 0");
+                    return IncomeFragment.newInstance();
 
                 case 1:
-                    Log.d(TAG, "this fragment selected 1");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 1");
+                    return FinancialFragment.newInstance();
 
                 default:
-                    Log.d(TAG, "this fragment selected 2");
-                    return EmployeeFragment.newInstance();
+                    Log.d(TAG, "this Account fragment selected 2");
+                    return IncomeFragment.newInstance();
             }
         }
 
@@ -75,7 +79,7 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
+    public static class ZoomOutPageTransformer implements ViewPager.PageTransformer {
         private static final float MIN_SCALE = 0.85f;
         private static final float MIN_ALPHA = 0.5f;
 
